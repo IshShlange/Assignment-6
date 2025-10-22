@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - DigitalReads</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Advanced CSS -->
+  <link href="advanced.css" rel="stylesheet">
+
+  <style>
+    /* Sidebar */
+    .about-sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+    .about-sidebar ul li {
+      margin: 10px 0;
+    }
+    .about-sidebar a {
+      text-decoration: none;
+      color: #0d6efd;
+    }
+    .about-sidebar a:hover {
+      text-decoration: underline;
+    }
+
+    /* Accordion Styles */
+    .accordion-section {
+      margin-top: 40px;
+    }
+
+    .accordion-item {
+      background-color: #f8f9fa;
+      border-radius: 8px;
+      padding: 15px 20px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      font-weight: 500;
+    }
+
+    .accordion-item:hover {
+      background-color: #e9ecef;
+    }
+
+    .accordion-content {
+      max-height: 200px;
+      overflow: hidden;
+      background-color: #fff;
+      padding: 15 20px;
+      border-left: 4px solid #0d6efd;
+      transition: max-height 0.3s ease, padding 0.4s ease;
+      border-radius: 0 0 8px 8px;
+    }
+
+    .accordion-item.active + .accordion-content {
+      max-height: 0px;
+      padding: 0px 20px;
+    }
+
+    .about-footer {
+      background-color: #f8f9fa;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/library.jpg" width="40" height="40" alt="logo" class="rounded-circle me-2">
+        DigitalReads
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="catalog.html">Catalog</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="mybooks.html">My Books</a></li>
+          <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+          <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="bg-primary text-white text-center py-5">
+    <div class="container">
+      <h1 class="display-6">About DigitalReads</h1>
+      <p class="lead">Learn more about who we are and what we do</p>
+    </div>
+  </header>
+
+  <!-- Main Section -->
+  <main class="container my-5">
+    <div class="row g-4">
+      
+      <!-- Sidebar -->
+      <aside class="col-lg-3 col-md-4 about-sidebar">
+        <h4 class="mb-3">Quick Links</h4>
+        <ul>
+          <li><a href="catalog.html">📖 Browse Catalog</a></li>
+          <li><a href="events.html">📅 Upcoming Events</a></li>
+          <li><a href="contact.html">✉️ Contact Us</a></li>
+          <li><a href="mybooks.html">📚 My Bookshelf</a></li>
+          <li><a href="register.html">📝 Join DigitalReads</a></li>
+        </ul>
+      </aside>
+
+      <!-- Main Content -->
+      <section class="col-lg-9 col-md-8 about-section">
+        <h2>Who We Are</h2>
+        <p>
+          DigitalReads is a modern online library platform created by students passionate about books and technology. 
+          Our mission is to make knowledge accessible to everyone by providing a wide 
+          collection of digital books across various genres — from technology and science 
+          to literature and history.
+        </p>
+
+        <h2>Our Mission</h2>
+        <p>
+          We believe in <strong>equal access to education</strong>. Our platform allows 
+          students, researchers, and book lovers to explore and read books anytime, anywhere.
+          By using modern web technologies, DigitalReads is designed to be simple, responsive, 
+          and user-friendly.
+        </p>
+
+        <h2>Why Choose DigitalReads?</h2>
+        <ul class="list-group mb-4">
+          <li class="list-group-item">✔️ 1000+ Books in multiple categories</li>
+          <li class="list-group-item">✔️ Easy search and personalized bookshelf</li>
+          <li class="list-group-item">✔️ Free access to educational materials</li>
+          <li class="list-group-item">✔️ Modern responsive design</li>
+        </ul>
+
+        <div class="about-footer mb-5">
+          <p><strong>Did you know?</strong> DigitalReads started as a small student project and has grown into a full-featured online library platform loved by readers worldwide.</p>
+        </div>
+
+        <!-- FAQ Accordion Section -->
+        <div class="accordion-section">
+          <h2 class="mb-4">Frequently Asked Questions</h2>
+
+          <div class="accordion-item">📘 What is DigitalReads?</div>
+          <div class="accordion-content">
+            DigitalReads is an online electronic library where users can read, download, and discuss books for free.
+          </div>
+
+          <div class="accordion-item">💳 Is it completely free to use?</div>
+          <div class="accordion-content">
+            Yes, all books and resources are available for free to students and readers who register on our platform.
+          </div>
+
+          <div class="accordion-item">📱 Can I use DigitalReads on mobile?</div>
+          <div class="accordion-content">
+            Absolutely! Our platform is responsive and works perfectly on smartphones and tablets.
+          </div>
+
+          <div class="accordion-item">🔐 Do I need to create an account?</div>
+          <div class="accordion-content">
+            You can browse freely, but creating an account lets you save your favorite books and manage your bookshelf.
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 DigitalReads | Created by Bekbolat Tileukhan, Nurkhan Khassenov, Nurassyl Meirbek, Dias Zhakin</p>
+  </footer>
+
+  <!-- JavaScript for Accordion -->
+  <script>
+    const items = document.querySelectorAll('.accordion-item');
+    items.forEach(item => {
+      item.addEventListener('click', () => {
+        item.classList.toggle('active');
+      });
+    });
+  </script>
+
+  <!-- Advanced JavaScript -->
+  <script src="js/theme.js"></script>
+  <script src="js/ratings.js"></script>
+  <script src="js/keyboard-nav.js"></script>
+  <script src="js/language.js"></script>
+  <script src="js/effects.js"></script>
+  <script src="js/contact-enhanced.js"></script>
+</body>
+</html>

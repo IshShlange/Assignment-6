@@ -1,0 +1,71 @@
+.night-theme {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+}
+
+.night-theme .bg-light {
+  background-color: #2d2d2d !important;
+  color: #e0e0e0;
+}
+
+.night-theme .card {
+  background-color: #2d2d2d;
+  color: #e0e0e0;
+  border-color: #444;
+}
+
+.night-theme .form-control {
+  background-color: #333;
+  color: #e0e0e0;
+  border-color: #555;
+}
+
+.night-theme .form-control:focus {
+  background-color: #333;
+  color: #e0e0e0;
+  border-color: #0d6efd;
+}
+
+/* Star ratings */
+.star-rating {
+  color: gold;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.star {
+  margin: 0 2px;
+  transition: transform 0.2s;
+}
+
+.star:hover {
+  transform: scale(1.2);
+}
+
+/* Keyboard navigation */
+.keyboard-focus {
+  outline: 2px solid #0d6efd;
+  outline-offset: 2px;
+}
+
+/* Animations */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Form messages */
+.form-message {
+  animation: fadeIn 0.5s ease;
+}
+
+/* Language selector */
+#languageSelector {
+  max-width: 120px;
+}

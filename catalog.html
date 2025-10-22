@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalog - DigitalReads</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Advanced CSS -->
+  <link href="advanced.css" rel="stylesheet">
+
+  <style>
+    .card img {
+      max-height: 200px;
+      object-fit: cover;
+    }
+    .search-section {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/library.jpg" width="40" height="40" alt="logo" class="rounded-circle me-2">
+        DigitalReads
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="catalog.html">Catalog</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="mybooks.html">My Books</a></li>
+          <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+          <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="bg-primary text-white text-center py-5">
+    <h1 class="display-6">Our Book Collection</h1>
+    <p class="lead">Explore our digital library and discover your next great read!</p>
+  </header>
+
+  <!-- Search -->
+  <section class="search-section my-4 text-center">
+    <form class="d-flex justify-content-center">
+      <input type="text" class="form-control w-50 me-2" placeholder="Search books...">
+      <button type="button" class="btn btn-primary">Search</button>
+    </form>
+  </section>
+
+  <!-- Book Catalog -->
+  <main class="container my-5">
+    <div class="row g-4 justify-content-center">
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100 text-center shadow-sm">
+          <img src="images/book1.jpg" class="card-img-top" alt="Book 1">
+          <div class="card-body">
+            <h5 class="card-title">JavaScript: The Good Parts</h5>
+            <p class="card-text">Douglas Crockford</p>
+            <span class="badge bg-secondary">Programming</span><br>
+            <button class="btn btn-success btn-sm mt-2">Read Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100 text-center shadow-sm">
+          <img src="images/book2.jpg" class="card-img-top" alt="Book 2">
+          <div class="card-body">
+            <h5 class="card-title">Clean Code</h5>
+            <p class="card-text">Robert C. Martin</p>
+            <span class="badge bg-secondary">Programming</span><br>
+            <button class="btn btn-success btn-sm mt-2">Read Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100 text-center shadow-sm">
+          <img src="images/book3.jpg" class="card-img-top" alt="Book 3">
+          <div class="card-body">
+            <h5 class="card-title">Design Patterns</h5>
+            <p class="card-text">Erich Gamma</p>
+            <span class="badge bg-secondary">Computer Science</span><br>
+            <button class="btn btn-success btn-sm mt-2">Read Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100 text-center shadow-sm">
+          <img src="images/python.jpg" class="card-img-top" alt="Book 4">
+          <div class="card-body">
+            <h5 class="card-title">Python Crash Course</h5>
+            <p class="card-text">Eric Matthes</p>
+            <span class="badge bg-secondary">Programming</span><br>
+            <button class="btn btn-success btn-sm mt-2">Read Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100 text-center shadow-sm">
+          <img src="images/effJava.jpg" class="card-img-top" alt="Book 5">
+          <div class="card-body">
+            <h5 class="card-title">Effective Java</h5>
+            <p class="card-text">Joshua Bloch</p>
+            <span class="badge bg-secondary">Programming</span><br>
+            <button class="btn btn-success btn-sm mt-2">Read Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100 text-center shadow-sm">
+          <img src="images/you dont know js.jpg" class="card-img-top" alt="Book 6">
+          <div class="card-body">
+            <h5 class="card-title">You Don't Know JS</h5>
+            <p class="card-text">Kyle Simpson</p>
+            <span class="badge bg-secondary">Programming</span><br>
+            <button class="btn btn-success btn-sm mt-2">Read Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100 text-center shadow-sm">
+          <img src="images/html,css.jpg" class="card-img-top" alt="Book 7">
+          <div class="card-body">
+            <h5 class="card-title">HTML & CSS: Design</h5>
+            <p class="card-text">Jon Duckett</p>
+            <span class="badge bg-secondary">Web Design</span><br>
+            <button class="btn btn-success btn-sm mt-2">Read Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100 text-center shadow-sm">
+          <img src="images/react.jpeg" class="card-img-top" alt="Book 8">
+          <div class="card-body">
+            <h5 class="card-title">Learning React</h5>
+            <p class="card-text">Alex Banks</p>
+            <span class="badge bg-secondary">Web Development</span><br>
+            <button class="btn btn-success btn-sm mt-2">Read Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100 text-center shadow-sm">
+          <img src="images/javabegiinerguide.jpg" class="card-img-top" alt="Book 9">
+          <div class="card-body">
+            <h5 class="card-title">Java: A Beginner's Guide</h5>
+            <p class="card-text">Herbert Schildt</p>
+            <span class="badge bg-secondary">Programming</span><br>
+            <button class="btn btn-success btn-sm mt-2">Read Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 DigitalReads | Created by Bekbolat Tileukhan, Nurkhan Khassenov, Nurassyl Meirbek, Dias Zhakin</p>
+  </footer>
+
+  <!-- Advanced JavaScript -->
+  <script src="js/theme.js"></script>
+  <script src="js/ratings.js"></script>
+  <script src="js/keyboard-nav.js"></script>
+  <script src="js/language.js"></script>
+  <script src="js/effects.js"></script>
+  <script src="js/contact-enhanced.js"></script>
+</body>
+</html>
